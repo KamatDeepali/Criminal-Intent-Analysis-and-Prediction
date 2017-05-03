@@ -1,0 +1,6 @@
+This data set has the risk factor associated with ward month wise
+Columns are
+
+ward-Number
+month-Varchar2
+Risk-Varchar2

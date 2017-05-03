@@ -1,0 +1,7 @@
+Each date set have crime count for the particular month for each ward over the period of 10 years
+
+Columns are,
+Totalcount-Number
+Month-Varchar2
+year-Number
+ward-Number

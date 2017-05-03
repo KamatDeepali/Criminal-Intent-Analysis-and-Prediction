@@ -1,0 +1,26 @@
+  #body1  { background-color: lightgray; color: black; font-size:30px; }
+   #body2  { background-color: #f3af72; color: black; font-size:15px; }
+ #one{ 
+ font-size:30px;
+ background-size: 100%;
+   height:500px;
+    width:500px;
+    float:left;
+    background-repeat: no-repeat;}
+    
+	#two{ background: url(chicagocrime.jpg);
+    background-size: 78%;
+   height:700px;
+    width:500px;
+    float:right;
+    background-repeat: no-repeat;}
+  p    {color:green}
+  b{ali}
+  h1 {text-align: center}
+  
+#two2{ background: url(crimetypes.jpg);
+    background-size: 100%;
+   height:900px;
+    width:500px;
+    float:right;
+    background-repeat: no-repeat;}

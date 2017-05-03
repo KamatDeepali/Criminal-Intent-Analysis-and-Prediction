@@ -1,0 +1,57 @@
+ create table crimecountMonthyearward(
+Toatalcount Number(30),
+c_Month Varchar2(10),
+h_year VARCHAR2(10),
+ward NUMBER(5)
+);
+
+  CREATE TABLE ChicagoCrimeData
+  (
+  case_Number VARCHAR2(20),
+  h_date DATE,
+  block VARCHAR2(100),
+  Iucr VARCHAR2(10),
+  primary_type VARCHAR2(100),
+  Description VARCHAR2(100),
+  location_desc VARCHAR2(100),
+  district NUMBER(10),
+  ward NUMBER(5),
+  community_area NUMBER(5),
+  year NUMBER(5)
+  );
+
+
+select count(*) as countNo,community_area from chicagocrimedata group by community_area;
+
+create view wardcountcrime1 as select count(PRIMARY_TYPE) as countNo,ward from chicagocrimedata group by ward order by countNo ;
+
+select count(*) as countNo from chicagocrimedata where ward=32;
+
+select count(*), datenmonth from CHICAGOCRIMEDATA where  ward=32 group by datenmonth order by count(*);
+
+
+create view wardcountprimcrime as select count(PRIMARY_TYPE) as countPrimType,PRIMARY_TYPE,ward  from CHICAGOCRIMEDATA group by primary_type,ward order by ward;
+
+create view countdateward as select count(*) as countPrie,DATENMONTH,ward  from CHICAGOCRIMEDATA group by ward, DATENMONTH order by countPrie;
+
+create view datencrimecount as select count(*) as countcrime , datenmonth from chicagocrimedata group by datenmonth ORDER by datenmonth;
+
+create view BURGLARYcountANDward as select ward , count(primary_type)as NoOfBURGLARY from CHICAGOCRIMEDATA where primary_type='BURGLARY' group by ward order by ward;
+
+create view  crimecounAndwardAndUndate as select count(*) as totalcrime, h_date , ward from chicagocrimedata group by ward, h_date order by ward , h_date;
+
+create table WardRiskfactor
+(ward Number(5),
+Month varchar2(20),
+riskfactor varchar(20));
+
+create table RiskwardMonth(
+ward NUMBER(5),
+c_Month Varchar2(10),
+Risk varchar2(5)
+);
+
+select risk from RISKWARDMONTH where ward=15 AND C_MONTH='January';
+
+
+

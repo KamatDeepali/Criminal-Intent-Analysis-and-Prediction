@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<!--
+/*
+ *  Welcome.html
+ *
+ * Project:Crime Prediction
+ * 
+ *
+ * @version   : Welcome.html,v 1.1 2015/10/02 23:31:20
+ *
+ * @author    : Apurwa Dandekar  Id$ ard5145
+ *              Deepali Kamat Id$ ddk9074  
+				Eric Fortunato Id$ eef2302
+ *
+ *
+ */
+-->
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./style.css"/>
+<script src="./validation.js"></script>
+<title>
+Crime Detection For Chicago
+</title>
+</head>
+<body id="body1">
+<div  height="10%"id="header"><b align="center"><h1><u>Crime Prediction</u></h1></b></div>
+<div id="one" style="width: 30%; float:left">
+
+<div height="30%">
+<form name="myForm" action="CrimeChicago" onsubmit="return validate()" method="get">
+
+<table border="1px">
+       
+    <tr>
+        <td><b style="font-size:30px;">Enter Location</b></td>
+        <td><input type="text" name="location"></td>
+    </tr>
+   
+	
+	<tr>
+        
+        <td><b style="font-size:30px;">Select Month</b></td>
+		<td> 
+<select name="month">
+ <option value="NULL">Select</option>
+  <option value="January">January</option>
+  <option value="February">February</option>
+  <option value="March">March</option>
+  <option value="April">April</option>
+  <option value="May">May</option>
+  <option value="June">June</option>
+  <option value="July">July</option>
+  <option value="August">August</option>
+  <option value="September">September</option>
+  <option value="October">October</option>
+  <option value="November">November</option>
+  <option value="December">December</option>
+</select>
+<br></td>
+    </tr>
+   <tr>
+        
+        <td colspan="2" align="center"><input type="submit" value="Submit"></td>
+    </tr>
+</table>
+</form>
+</div>
+</div >
+<div id="two" style="width: 70%; float:left">
+</div>
+</body>
+</html>

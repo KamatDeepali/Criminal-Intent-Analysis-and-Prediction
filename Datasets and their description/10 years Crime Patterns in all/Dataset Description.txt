@@ -1,0 +1,6 @@
+Data set has a total count of no. of crimes occurred in the span of of 10 years for each ward
+
+columns are,
+ward-Number
+crimecount- Number
+year-Number

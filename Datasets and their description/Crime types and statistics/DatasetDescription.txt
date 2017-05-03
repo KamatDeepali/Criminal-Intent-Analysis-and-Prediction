@@ -1,0 +1,3 @@
+The data set has a percentage of crimetypes occured throughout the 10 years.
+ward-number
+percentage of each crime type-Number
